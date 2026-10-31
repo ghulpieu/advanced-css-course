@@ -1,0 +1,2 @@
+allowBuilds:
+  node-sass: set this to true or false
