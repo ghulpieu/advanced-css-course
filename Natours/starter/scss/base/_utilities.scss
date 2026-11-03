@@ -1,0 +1,21 @@
+// Margin Block End
+.mbe-small {
+  margin-block-end: var(--space-small);
+}
+
+.mbe-medium {
+  margin-block-end: var(--space-medium);
+}
+
+.mbe-big {
+  margin-block-end: var(--space-big);
+}
+
+// Margin Block Start
+.mbs-big {
+  margin-block-start: var(--space-big);
+}
+
+.mbs-huge {
+  margin-block-start: var(--space-huge);
+}

@@ -34,3 +34,28 @@ body {
     animation: moveInRight 1s ease-out;
   }
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  //display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--color-primary-light) 100%, transparent),
+    color-mix(in srgb, var(--color-primary-dark) 100%, transparent)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem
+      color-mix(in srgb, var(--color-black) 20%, transparent);
+  }
+}
