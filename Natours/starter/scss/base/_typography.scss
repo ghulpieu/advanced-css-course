@@ -1,16 +1,14 @@
-@use "../abstracts//variables";
-
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /*font-size: 16px; */
   line-height: 1.7;
-  color: variables.$color-grey-dark;
+  color: var(color-grey-dark);
   padding: 3rem;
 }
 
 .heading-primary {
-  color: variables.$color-white;
+  color: var(--color-white);
   text-transform: uppercase;
 
   backface-visibility: hidden;
@@ -25,11 +23,6 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-
-    /*
-    animation-delay: 3s;
-    animation-iteration-count: 3;
-    */
   }
 
   &__sub {
