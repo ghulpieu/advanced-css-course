@@ -41,7 +41,7 @@ body {
   text-transform: uppercase;
   text-align: center;
 
-  //display: inline-block;
+  // display: inline-block;
   background-image: linear-gradient(
     to right,
     color-mix(in srgb, var(--color-primary-light) 100%, transparent),
@@ -57,5 +57,19 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem
       color-mix(in srgb, var(--color-black) 20%, transparent);
+  }
+}
+
+.heading-tertiary {
+  font-size: var(--default-font-size);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: var(--default-font-size);
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
