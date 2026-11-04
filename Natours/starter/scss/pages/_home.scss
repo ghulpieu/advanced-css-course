@@ -22,3 +22,26 @@
     // heading-tertiary and paragraph in _typography
   }
 }
+
+.section-features {
+  padding: 20rem 0;
+  background-image:
+    linear-gradient(
+      to right bottom,
+      color-mix(in srgb, var(--color-primary-light) 80%, transparent),
+      color-mix(in srgb, var(--color-primary-dark) 80%, transparent)
+    ),
+    url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+
+  // the direct child of section-features is row
+  & > * {
+    margin: 0 4rem;
+    display: flex;
+    gap: 4rem;
+
+    transform: skewY(7deg);
+  }
+}
