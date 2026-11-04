@@ -10,7 +10,7 @@
     // handle structure
     &__col {
       flex: 1;
-      background-color: red; // REMOVE
+      //background-color: red; // FIXME: REMOVE
 
       // Ensures images or nested flex layouts inside the columns behave properly
       min-width: 0;
@@ -19,5 +19,6 @@
 
   // handle styling
   &__column {
+    // heading-tertiary and paragraph in _typography
   }
 }
