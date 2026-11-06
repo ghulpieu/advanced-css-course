@@ -11,6 +11,12 @@
   --color-primary-light: #7ed56f;
   --color-primary-dark: #28b485;
 
+  --color-secondary-light: #ffb900;
+  --color-secondary-dark: #ff77d0;
+
+  --color-tertiary-light: #2998ff;
+  --color-tertiary-dark: #5643fa;
+
   --color-grey-light-1: #f7f7f7;
 
   --color-grey-dark: #777;
@@ -23,6 +29,21 @@
   --space-medium: 4rem;
   --space-big: 8rem;
   --space-huge: 10rem;
+
+  --shadow-one-light: 0 0.5rem 1rem
+    color-mix(in srgb, var(--color-black) 15%, transparent);
+  --shadow-one-dark: 0 0.5rem 1rem
+    color-mix(in srgb, var(--color-black) 80%, transparent);
+  --shadow-two-light: 0 1rem 2rem
+    color-mix(in srgb, var(--color-black) 15%, transparent);
+  --shadow-two-dark: 0 1rem 2rem
+    color-mix(in srgb, var(--color-black) 80%, transparent);
+  --shadow-three-light: 0 1.5rem 4rem
+    color-mix(in srgb, var(--color-black) 15%, transparent);
+  --shadow-three-medium: 0 1.5rem 4rem
+    color-mix(in srgb, var(--color-black) 40%, transparent);
+  --shadow-four-medium: 0 2.5rem 4rem
+    color-mix(in srgb, var(--color-black) 50%, transparent);
 }
 
 html {
