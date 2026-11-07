@@ -61,4 +61,8 @@
 .section-stories {
   padding: 15rem 0;
   background-color: var(--color-grey-light-1);
+
+  .row {
+    padding: 4rem 10rem;
+  }
 }
