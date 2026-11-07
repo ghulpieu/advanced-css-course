@@ -45,6 +45,8 @@
     color-mix(in srgb, var(--color-black) 40%, transparent);
   --shadow-four-medium: 0 2.5rem 4rem
     color-mix(in srgb, var(--color-black) 50%, transparent);
+  --shadow-five-large: 0 3rem 6rem
+    color-mix(in srgb, var(--color-black) 10%, transparent);
 }
 
 html {

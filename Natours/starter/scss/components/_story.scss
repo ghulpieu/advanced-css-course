@@ -1,0 +1,37 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: var(--shadow-five-large);
+  background-color: color-mix(in srgb, var(--color-white) 60%, transparent);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: var(--default-font-size);
+  transform: skewX(-12deg);
+
+  & > * {
+    transform: skewX(12deg);
+  }
+
+  &__shape {
+    content: "";
+    float: left;
+
+    width: 15rem;
+    height: 15rem;
+
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    translate: -3rem;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__text {
+  }
+}
