@@ -66,3 +66,38 @@
     padding: 4rem 10rem;
   }
 }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    color-mix(in srgb, var(--color-primary-light) 100%, transparent),
+    color-mix(in srgb, var(--color-primary-dark) 100%, transparent)
+  );
+
+  .row {
+    padding: 4rem 15rem;
+  }
+
+  .book {
+    background-image:
+      linear-gradient(
+        105deg,
+        color-mix(in srgb, var(--color-white) 90%, transparent) 0%,
+        color-mix(in srgb, var(--color-white) 90%, transparent) 50%,
+        transparent 50.1%
+      ),
+      url(../img/nat-10.jpg);
+
+    background-size: cover;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-three-medium);
+
+    height: 50rem;
+
+    &__form {
+      width: 50%;
+      padding: 6rem;
+    }
+  }
+}

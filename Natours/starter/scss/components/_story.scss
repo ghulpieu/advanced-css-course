@@ -3,7 +3,7 @@
   margin: 0 auto;
   box-shadow: var(--shadow-five-large);
   background-color: color-mix(in srgb, var(--color-white) 60%, transparent);
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   padding: 6rem;
   padding-left: 9rem;
   font-size: var(--default-font-size);
