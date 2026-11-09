@@ -1,0 +1,29 @@
+/*
+// mixin: placeholder
+// Apply it to your inputs
+input, textarea {
+  @include placeholder {
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 1; // Required to override Firefox's default translucent opacity
+  }
+*/
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  } // Chrome, Safari, Edge
+  &:-moz-placeholder {
+    @content;
+  } // Firefox 4-18
+  &::-moz-placeholder {
+    @content;
+  } // Firefox 19+
+  &:-ms-input-placeholder {
+    @content;
+  } // IE 10-11
+  &::placeholder {
+    @content;
+  } // Modern standard browsers
+}
