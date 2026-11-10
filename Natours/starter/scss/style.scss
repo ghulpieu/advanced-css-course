@@ -9,12 +9,13 @@
 @use "components/bg-video";
 @use "components/button";
 @use "components/feature-box";
-@use "components/footer";
 @use "components/form";
 @use "components/card";
 @use "components/composition";
 @use "components/story.scss";
 
+@use "layout/footer";
 @use "layout/header";
+@use "layout/navigation";
 
 @use "pages/home";
