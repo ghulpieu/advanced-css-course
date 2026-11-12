@@ -1,0 +1,63 @@
+@use "../abstracts/mixins" as *;
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: color-mix(in srgb, var(--color-black) 85%, transparent);
+  z-index: 2500;
+
+  &__content {
+    @include absCenter;
+
+    display: flex;
+    width: 75%;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-three-light);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    width: 33.333333%;
+  }
+
+  &__right {
+    width: 66.666666%;
+    padding: 5rem 5rem;
+  }
+
+  &__img {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    min-width: 0;
+    flex: 1;
+
+    -moz-column-count: 2;
+    -moz-column-gap: 3rem;
+    -moz-column-rule: 1px solid var(--color-grey-light-2);
+    -moz-hyphens: auto;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 3rem;
+    -webkit-column-rule: 1px solid var(--color-grey-light-2);
+    -webkit-hyphens: auto;
+
+    column-count: 2;
+    column-gap: 3rem;
+    column-rule: 1px solid var(--color-grey-light-2);
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}

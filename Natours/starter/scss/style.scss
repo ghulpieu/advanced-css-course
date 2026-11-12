@@ -1,5 +1,5 @@
 @use "abstracts/functions";
-@use "abstracts/mixins";
+//@use "abstracts/mixins";
 
 @use "base/animations";
 @use "base/base";
@@ -8,10 +8,11 @@
 
 @use "components/bg-video";
 @use "components/button";
-@use "components/feature-box";
-@use "components/form";
 @use "components/card";
 @use "components/composition";
+@use "components/feature-box";
+@use "components/form";
+@use "components/popup";
 @use "components/story.scss";
 
 @use "layout/footer";

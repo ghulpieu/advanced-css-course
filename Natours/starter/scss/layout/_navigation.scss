@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+
 .navigation {
   &__checkbox {
     display: none;
@@ -46,10 +48,7 @@
   }
 
   &__list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include absCenter;
 
     list-style: none;
     text-align: center;
