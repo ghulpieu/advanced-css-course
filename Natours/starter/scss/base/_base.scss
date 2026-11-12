@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+
 *,
 *::before,
 *::after {
@@ -60,6 +62,22 @@ html {
   // This defines what 1rem is.
   font-size: 62.5%;
   box-sizing: border-box;
+
+  // Don't need phone as it is covered by tab-port
+  // i.e., both are less than 900px
+
+  // width < 1200?
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
+  }
+  // width < 900?
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+  // width > 1800?
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px, 12/16 = 75%
+  }
 }
 
 body {
