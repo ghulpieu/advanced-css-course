@@ -1,11 +1,22 @@
+@use "../abstracts/mixins" as *;
+
 .section-about {
   background-color: var(--color-grey-light-1);
   padding: 25rem 0;
   margin-top: -20vh;
 
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
+
   .row {
     display: flex;
+    padding-inline: 4rem;
     gap: 4rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
 
     // handle structure
     &__col {
@@ -14,6 +25,10 @@
 
       // Ensures images or nested flex layouts inside the columns behave properly
       min-width: 0;
+
+      @include respond(tab-port) {
+        margin-block-end: 5rem;
+      }
     }
   }
 
@@ -36,6 +51,10 @@
   transform: skewY(-7deg);
   margin-top: -10rem;
 
+  @include respond(tab-port) {
+    padding: 10rem;
+  }
+
   // the direct child of section-features is row
   & > * {
     display: flex;
@@ -53,6 +72,10 @@
   padding: 25rem 0 15rem 0;
   margin-top: -10rem;
 
+  @include respond(tab-port) {
+    padding: 20rem 0 10rem 0;
+  }
+
   &__card-container {
     display: flex;
     justify-content: center;
@@ -66,6 +89,10 @@
   position: relative;
   padding: 15rem 0;
 
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+
   .row {
     padding: 4rem 10rem;
   }
@@ -78,6 +105,10 @@
     color-mix(in srgb, var(--color-primary-light) 100%, transparent),
     color-mix(in srgb, var(--color-primary-dark) 100%, transparent)
   );
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 
   .row {
     padding: 4rem 15rem;

@@ -1,14 +1,28 @@
+@use "../abstracts/mixins" as *;
+
 // Margin Block End
 .mbe-small {
   margin-block-end: var(--space-small);
+
+  @include respond(tab-port) {
+    margin-block-end: 0.5rem;
+  }
 }
 
 .mbe-medium {
   margin-block-end: var(--space-medium);
+
+  @include respond(tab-port) {
+    margin-block-end: 3rem;
+  }
 }
 
 .mbe-big {
   margin-block-end: var(--space-big);
+
+  @include respond(tab-port) {
+    margin-block-end: 5rem;
+  }
 }
 
 // Margin Block Start
@@ -18,6 +32,10 @@
 
 .mbs-huge {
   margin-block-start: var(--space-huge);
+
+  @include respond(tab-port) {
+    margin-block-start: 6rem;
+  }
 }
 
 .center-text {
