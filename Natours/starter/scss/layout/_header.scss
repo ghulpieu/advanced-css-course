@@ -3,7 +3,7 @@
 .header {
   display: flex;
   //flex: 1;
-  //box-sizing: border-box;
+  box-sizing: border-box;
 
   height: 85vh;
   background-image:
@@ -17,13 +17,19 @@
   background-position: top;
   position: relative;
 
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-
-  @include respond(phone) {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  }
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--slant-offset)),
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--slant-offset)),
+    0 100%
+  );
+  padding-bottom: calc(2rem + var(--slant-offset));
 
   &__logo-box {
     position: absolute;

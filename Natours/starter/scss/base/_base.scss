@@ -1,6 +1,9 @@
 @use "../abstracts/mixins" as *;
 
 :root {
+  // NOTE: using vw scales the slant proportionally with the screen width
+  --slant-offset: 10vw;
+
   --color-primary: #55c57a;
   --color-primary-light: #7ed56f;
   --color-primary-dark: #28b485;
