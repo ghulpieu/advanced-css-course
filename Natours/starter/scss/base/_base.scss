@@ -1,13 +1,5 @@
 @use "../abstracts/mixins" as *;
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
 :root {
   --color-primary: #55c57a;
   --color-primary-light: #7ed56f;
@@ -59,10 +51,10 @@
 }
 
 html {
-  // This defines what 1rem is.
-  font-size: 62.5%;
   box-sizing: border-box;
 
+  // This defines what 1rem is.
+  font-size: 62.5%;
   // Don't need phone as it is covered by tab-port
   // i.e., both are less than 900px
 
@@ -80,9 +72,22 @@ html {
   }
 }
 
-body {
-  min-height: 100vh;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
+body {
   display: flex;
   flex-direction: column;
+
+  min-height: 100vh;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }

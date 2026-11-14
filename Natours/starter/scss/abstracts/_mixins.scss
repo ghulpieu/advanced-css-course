@@ -43,6 +43,8 @@ input, textarea {
 1200 - 1800px:  Normal styles apply (std desktop)
 1800px *:       Big desktop (max-width)
 
+ORDER: Base + typography > general layout + grid > page layout > components
+
 $breakpoint argument choices:
 - phone
 - tab-port

@@ -1,14 +1,27 @@
 @use "../abstracts/mixins" as *;
 
 .card {
+  flex: 1;
+  box-sizing: border-box;
+
   // FUNCTIONALITY
   -moz-perspective: 150rem;
   perspective: 150rem;
   position: relative;
   height: 52rem;
-
-  flex: 1;
   padding: 2rem;
+
+  /* 1 item per row: 50% */
+  @include respond(tab-port) {
+    flex: 0 0 100%;
+    max-width: 50%;
+  }
+
+  /* 1 item per row: 75% */
+  @include respond(phone) {
+    flex: 0 0 100%;
+    max-width: 75%;
+  }
 
   &__side {
     height: 52rem;

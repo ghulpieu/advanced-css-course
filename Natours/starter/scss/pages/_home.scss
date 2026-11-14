@@ -38,9 +38,11 @@
 
   // the direct child of section-features is row
   & > * {
-    margin: 0 4rem;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 4rem;
+    margin: 0 4rem;
 
     transform: skewY(7deg);
   }
@@ -53,6 +55,8 @@
 
   &__card-container {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 4rem;
     margin: 0 4rem;
   }

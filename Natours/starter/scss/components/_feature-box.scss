@@ -1,4 +1,11 @@
+@use "../abstracts/mixins" as *;
+
 .feature-box {
+  /* 4 items per row: 100% divided by 4, minus the 3 gaps (3 * 4rem) */
+  //flex: 1 1 calc(25% - 12rem);
+  flex: 1;
+  box-sizing: border-box;
+
   background-color: color-mix(in srgb, var(--color-white) 80%, transparent);
   font-size: 1.5rem;
   padding: 2.5rem;
@@ -7,6 +14,18 @@
   box-shadow: 0 1.5rem 4rem
     color-mix(in srgb, var(--color-black) 15%, transparent);
   transition: transform 0.3s;
+
+  /* 2 items per row: 100% divided by 2, minus the 1 gap (4 / 2) */
+  @include respond(tab-port) {
+    flex: 0 0 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+
+  /* 1 item per row: 100% */
+  @include respond(phone) {
+    flex: 0 0 100%;
+    max-width: 75%;
+  }
 
   &__icon {
     font-size: 6rem;
