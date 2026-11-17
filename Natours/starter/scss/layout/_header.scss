@@ -12,7 +12,7 @@
       color-mix(in srgb, var(--color-primary-light) 80%, transparent),
       color-mix(in srgb, var(--color-primary-dark) 80%, transparent)
     ),
-    url(../img/hero.jpg);
+    url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -30,6 +30,29 @@
     0 100%
   );
   padding-bottom: calc(2rem + var(--slant-offset));
+
+  // 192dpi is the Apple retina screen
+  // use higher resolution image if min-resolution is
+  // greater than 192dpi and width is greater than 600px
+  // Note: media queries should always be in 'em' (600/16, 900/16, etc)
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image:
+      linear-gradient(
+        to right bottom,
+        color-mix(in srgb, var(--color-primary-light) 80%, transparent),
+        color-mix(in srgb, var(--color-primary-dark) 80%, transparent)
+      ),
+      url(../img/hero.jpg);
+  }
+  // @media (min-width: 2000px) {
+  //   background-image:
+  //     linear-gradient(
+  //       to right bottom,
+  //       color-mix(in srgb, var(--color-secondary-light) 80%, transparent),
+  //       color-mix(in srgb, var(--color-secondary-dark) 80%, transparent)
+  //     ),
+  //     url(../img/hero.jpg);
+  // }
 
   &__logo-box {
     position: absolute;
