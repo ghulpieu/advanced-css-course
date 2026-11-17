@@ -17,25 +17,33 @@
   background-position: top;
   position: relative;
 
-  -webkit-clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - var(--slant-offset)),
-    0 100%
-  );
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - var(--slant-offset)),
-    0 100%
-  );
-  padding-bottom: calc(2rem + var(--slant-offset));
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - var(--slant-offset)),
+      0 100%
+    );
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - var(--slant-offset)),
+      0 100%
+    );
+
+    // implement a scaling version of the clipped element
+    padding-bottom: calc(2rem + var(--slant-offset));
+
+    height: 95vh;
+  }
 
   // 192dpi is the Apple retina screen
   // use higher resolution image if min-resolution is
   // greater than 192dpi and width is greater than 600px
   // Note: media queries should always be in 'em' (600/16, 900/16, etc)
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (min-width: 125em) {
     background-image:
       linear-gradient(
         to right bottom,
