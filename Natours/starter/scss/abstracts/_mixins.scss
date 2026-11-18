@@ -11,18 +11,18 @@ input, textarea {
 */
 
 @mixin placeholder {
-  &::-webkit-input-placeholder {
-    @content;
-  } // Chrome, Safari, Edge
-  &:-moz-placeholder {
-    @content;
-  } // Firefox 4-18
-  &::-moz-placeholder {
-    @content;
-  } // Firefox 19+
-  &:-ms-input-placeholder {
-    @content;
-  } // IE 10-11
+  // &::-webkit-input-placeholder {
+  //   @content;
+  // } // Chrome, Safari, Edge
+  // &:-moz-placeholder {
+  //   @content;
+  // } // Firefox 4-18
+  // &::-moz-placeholder {
+  //   @content;
+  // } // Firefox 19+
+  // &:-ms-input-placeholder {
+  //   @content;
+  // } // IE 10-11
   &::placeholder {
     @content;
   } // Modern standard browsers

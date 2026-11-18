@@ -57,7 +57,7 @@ body {
     color-mix(in srgb, var(--color-primary-light) 100%, transparent),
     color-mix(in srgb, var(--color-primary-dark) 100%, transparent)
   );
-  -webkit-background-clip: text;
+  // -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;

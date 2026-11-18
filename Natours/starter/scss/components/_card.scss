@@ -5,7 +5,7 @@
   box-sizing: border-box;
 
   // FUNCTIONALITY
-  -moz-perspective: 150rem;
+  //-moz-perspective: 150rem;
   perspective: 150rem;
   position: relative;
   height: 52rem;
@@ -18,7 +18,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    -webkit-backface-visibility: hidden;
+    // -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -70,7 +70,7 @@
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -120,7 +120,7 @@
 
   &__heading-span {
     padding: 1rem 1.5rem;
-    -webkit-box-decoration-break: clone;
+    // -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
     &--1 {
