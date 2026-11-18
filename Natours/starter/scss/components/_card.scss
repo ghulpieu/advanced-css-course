@@ -192,9 +192,14 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     flex: 0 0 100%;
     max-width: 50%;
+
+    @include respond(tab-port) {
+      max-width: 100%;
+    }
 
     // FUNCTIONALITY
     height: auto;
