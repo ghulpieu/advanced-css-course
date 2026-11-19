@@ -9,6 +9,12 @@
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
+  --color-black: #000;
+  --color-white: #fff;
+  /*
+  * Define variables for various shawdow boxes
+  0 2rem 6rem color-mix(in srgb, var(--color-black) 30%, transparent)
+  */
 }
 
 * {
@@ -36,4 +42,32 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: 0 2rem 6rem color-mix(in srgb, var(--color-black) 30%, transparent);
+  min-height: 50rem;
+}
+
+.header {
+  height: 7rem;
+  background-color: var(--color-white);
+  border-bottom: var(--color-grey-light-2);
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+}
+
+.hotel-view {
+  background-color: orangered;
+  flex: 1;
 }/*# sourceMappingURL=style.css.map */

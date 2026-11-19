@@ -13,6 +13,14 @@
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
+
+  --color-black: #000;
+  --color-white: #fff;
+
+  /*
+  * Define variables for various shawdow boxes
+  0 2rem 6rem color-mix(in srgb, var(--color-black) 30%, transparent)
+  */
 }
 
 // UNIVERSAL RESET
