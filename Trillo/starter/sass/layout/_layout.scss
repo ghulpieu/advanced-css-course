@@ -1,3 +1,4 @@
+// display: block
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -5,7 +6,7 @@
   box-shadow: 0 2rem 6rem
     color-mix(in srgb, var(--color-black) 30%, transparent);
 
-  // TODO: for testing, remove
+  // TODO: expand height for testing, remove
   min-height: 50rem;
 }
 
@@ -20,13 +21,10 @@
   align-items: center;
 }
 
-.content {
-  display: flex;
-}
-
 .sidebar {
   background-color: var(--color-grey-dark-1);
 
+  // set sidebar size
   flex: 0 0 18%;
 
   display: flex;
@@ -34,10 +32,14 @@
   justify-content: space-between;
 }
 
+.content {
+  display: flex;
+}
+
 .hotel-view {
   background-color: orangered; //var(--color-white);
 
-  // TODO: remove later
+  // TODO: testing initial size
   height: 80rem;
 
   flex: 1;
