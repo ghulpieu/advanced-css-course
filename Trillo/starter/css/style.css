@@ -11,11 +11,17 @@
   --color-grey-dark-3: #999;
   --color-black: #000;
   --color-white: #fff;
+  --line: 1px solid var(--color-grey-light-2);
   /*
   * Define variables for various shawdow boxes
-  0 2rem 6rem color-mix(in srgb, var(--color-black) 30%, transparent)
+  * 0 2rem 5rem color-mix(in srgb, var(--color-black) 6%, transparent)
+  * 0 2rem 6rem color-mix(in srgb, var(--color-black) 30%, transparent)
   0 1rem 4rem color-mix(in srgb, var(--color-black) 25%, transparent)
   */
+  --shadow-light: 0 2rem 5rem
+    color-mix(in srgb, var(--color-black) 6%, transparent);
+  --shadow-dark: 0 2rem 6rem
+    color-mix(in srgb, var(--color-black) 30%, transparent);
 }
 
 * {
@@ -204,7 +210,7 @@ body {
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: var(--line);
 }
 .overview__heading {
   font-size: 2.25rem;
@@ -288,7 +294,7 @@ body {
   max-width: 120rem;
   margin: 8rem auto;
   background-color: var(--color-grey-light-1);
-  box-shadow: 0 2rem 6rem color-mix(in srgb, var(--color-black) 30%, transparent);
+  box-shadow: var(--shadow-dark);
   min-height: 50rem;
 }
 
@@ -296,7 +302,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: var(--color-white);
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -316,6 +322,26 @@ body {
 
 .hotel-view {
   background-color: var(--color-white);
-  height: 80rem;
+  flex: 1;
+}
+
+.details {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+}
+
+.description {
+  flex: 0 0 60%;
+  font-size: 1.4rem;
+  margin-right: 4.5rem;
+  padding: 3rem;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-light);
+}
+
+.user-reviews {
+  background-color: yellowgreen;
   flex: 1;
 }/*# sourceMappingURL=style.css.map */
