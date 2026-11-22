@@ -31,6 +31,13 @@
     color-mix(in srgb, var(--color-black) 30%, transparent);
 }
 
+// MEDIA QUERY BREAKPOINTS
+// SASS variables are allowed, CSS variables are not
+//    divide by 16 to get em
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+
 // UNIVERSAL RESET
 * {
   margin: 0;
@@ -47,6 +54,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // define 1rem equal to 10px (10/16)
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 // BASE INHERITED STYLES
