@@ -1,3 +1,7 @@
-@use "base";
-@use "components";
-@use "layout";
+@use "abstracts/mixins";
+
+@use "base/base";
+
+@use "component/component";
+
+@use "layout/layout";

@@ -16,7 +16,10 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src="img/logo.png" alt="" class="logo" />
+        <!-- ICON -->
+        <img src="img/logo.png" alt="trillo logo" class="logo" />
+
+        <!-- SEARCH -->
         <form action="#" class="search">
           <input
             type="text"
@@ -30,32 +33,40 @@
           </button>
         </form>
 
+        <!-- USER NAVIGATION -->
         <nav class="user-nav">
+          <!-- BOOKMARKS -->
           <div class="user-nav__icon-box">
             <svg class="user-nav__icon">
               <use href="img/sprite.svg#icon-bookmark"></use>
             </svg>
             <span class="user-nav__notification">7</span>
           </div>
+
+          <!-- CHATS -->
           <div class="user-nav__icon-box">
             <svg class="user-nav__icon">
               <use href="img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">13</span>
           </div>
+
+          <!-- USER INFO -->
           <div class="user-nav__user">
             <img
               src="img/user.jpg"
               alt="User photo"
               class="user-nav__user-photo"
             />
-            <span class="user-nav__user-name">Jonus</span>
+            <span class="user-nav__user-name">Jonas</span>
           </div>
         </nav>
       </header>
 
       <div class="content">
+        <!-- NAVIGATION SIDEBAR -->
         <nav class="sidebar">
+          <!-- HOTELS -->
           <ul class="side-nav">
             <li class="side-nav__item side-nav__item--active">
               <a href="#" class="side-nav__link">
@@ -65,6 +76,8 @@
                 <span>Hotel</span>
               </a>
             </li>
+
+            <!-- FLIGHTS -->
             <li class="side-nav__item">
               <a href="#" class="side-nav__link">
                 <svg class="side-nav__icon">
@@ -73,14 +86,18 @@
                 <span>Flight</span>
               </a>
             </li>
+
+            <!-- CAR RENTALS -->
             <li class="side-nav__item">
               <a href="#" class="side-nav__link">
                 <svg class="side-nav__icon">
                   <use href="img/sprite.svg#icon-key"></use>
                 </svg>
-                <span>Car Rental</span>
+                <span>Car rental</span>
               </a>
             </li>
+
+            <!-- TOURS -->
             <li class="side-nav__item">
               <a href="#" class="side-nav__link">
                 <svg class="side-nav__icon">
@@ -91,9 +108,11 @@
             </li>
           </ul>
 
+          <!-- SIDEBAR COPYRIGHT -->
           <div class="legal">&copy; 2026 by trillo. All rights reserved.</div>
         </nav>
 
+        <!-- MAIN CONTENT VIEW -->
         <main class="hotel-view">
           <div class="gallery">
             <figure class="gallery__item">
@@ -120,7 +139,10 @@
           </div>
 
           <div class="overview">
+            <!-- HEADING -->
             <h1 class="overview__heading">Hotel Las Palmas</h1>
+
+            <!-- RATING -->
             <div class="overview__stars">
               <svg class="overview__icon-star">
                 <use href="img/sprite.svg#icon-star"></use>
@@ -139,6 +161,7 @@
               </svg>
             </div>
 
+            <!-- LOCATION -->
             <div class="overview__location">
               <svg class="overview__icon-location">
                 <use href="img/sprite.svg#icon-location-pin"></use>
@@ -146,13 +169,15 @@
               <button class="btn-inline">Albufeira, Portugal</button>
             </div>
 
+            <!-- RATING STATS -->
             <div class="overview__rating">
               <div class="overview__rating-average">8.6</div>
               <div class="overview__rating-count">429 votes</div>
             </div>
           </div>
 
-          <div class="detail">
+          <!-- HOTEL DETAILS (description - reviews) -->
+          <div class="details">
             <div class="description">
               <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
@@ -203,13 +228,14 @@
               </div>
             </div>
 
+            <!-- USER REVIEWS -->
             <div class="user-reviews">
               <figure class="review">
                 <blockquote class="review__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
                   doloremque architecto dicta animi, totam, itaque officia ex.
                 </blockquote>
-                <figurecaption class="review__user">
+                <figcaption class="review__user">
                   <img
                     src="img/user-1.jpg"
                     alt="User 1"
@@ -220,15 +246,14 @@
                     <p class="review__user-date">Feb 23rd, 2026</p>
                   </div>
                   <div class="review__rating">7.8</div>
-                </figurecaption>
+                </figcaption>
               </figure>
-
               <figure class="review">
                 <blockquote class="review__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
                   doloremque architecto dicta animi.
                 </blockquote>
-                <figurecaption class="review__user">
+                <figcaption class="review__user">
                   <img
                     src="img/user-2.jpg"
                     alt="User 2"
@@ -238,14 +263,15 @@
                     <p class="review__user-name">Mary Thomas</p>
                     <p class="review__user-date">Sept 13th, 2026</p>
                   </div>
-                  <div class="review__rating">9.3</div>
-                </figurecaption>
+                  <div class="review__rating">8.3</div>
+                </figcaption>
               </figure>
 
               <button class="btn-inline">Show all <span>&rarr;</span></button>
             </div>
           </div>
 
+          <!-- CALL TO ACTION -->
           <div class="cta">
             <h2 class="cta__book-now">
               Good news! We have 4 rooms available for your selected dates!
