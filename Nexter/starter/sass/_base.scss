@@ -40,3 +40,8 @@ body {
   line-height: 1.6;
   color: var(--color-grey-dark-2);
 }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40% repeat(3, min-content);
+}
